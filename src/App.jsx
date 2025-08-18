@@ -123,7 +123,7 @@ function App() {
               {/* Contact Section */}
               <section className="rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-6">
                 <div className="flex justify-between items-center mb-4">
-                  <h2 className="text-2xl font-mono">My Stack</h2>
+                  <h2 className="text-2xl font-mono">Contact</h2>
                   <button className="text-xl transform transition duration-300 hover:scale-125">→</button>
                 </div>
               </section>
