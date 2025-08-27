@@ -26,7 +26,7 @@ function App() {
         {status && (
           <div
             className={`fixed z-100 top-10 right-5 px-4 py-3 rounded-lg shadow-lg text-white transition-all duration-300 ${
-              status === "success" ? "bg-green-600" : "bg-red-600"
+              status === "success" ? "bg-[#0a6802]" : "bg-red-600"
             }`}
           >
             {status === "success" ? (
@@ -38,7 +38,7 @@ function App() {
               </div>
             ) : (
               <div className="flex items-center">
-                <X />
+                <X className="w-4 h-4 mr-2" />
                 <span className="text-white font-medium text-lg">
                   Failed to send. Please try again.
                 </span>

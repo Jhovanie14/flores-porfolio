@@ -16,7 +16,7 @@ function Hero() {
           <div className="mb-8">
             <img
               className="w-48 h-48 mx-auto ring-4 ring-[#0a6802]/20 rounded-full mb-6"
-              src="profile.png"
+              src="profile2.jpg"
               alt="Profile"
             />
             <h1 className="text-4xl md:text-6xl font-bold text-balance mb-6">
