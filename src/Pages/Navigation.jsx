@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Button from "../components/Button";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/my-logo.png";
 import {
   Briefcase,
   Code,
