@@ -1,10 +1,10 @@
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-import { useRef } from "react";
+import { Check, Mail, MapPin, Phone, Send } from "lucide-react";
+import { useRef, useState } from "react";
 import Input from "../components/Input";
 import emailjs from "emailjs-com";
 import Card from "../components/Card";
 
-function Contact() {
+function Contact({ status }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -18,14 +18,12 @@ function Contact() {
         "KcB6j-8UOQJYiHTMj"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          status("success");
           form.current.reset();
-          alert("Message sent successfully!");
         },
-        (error) => {
-          console.log(error.text);
-          alert("Failed to send message");
+        () => {
+          status("error");
         }
       );
   };
@@ -93,7 +91,6 @@ function Contact() {
                   possible.
                 </p>
               </div>
-
               <form ref={form} onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
