@@ -18,7 +18,7 @@ const skillCategories = [
     skills: [
       { name: "PHP", level: 87 },
       { name: "Laravel", level: 87 },
-      { name: "PostgreSQL", level: 77 },
+      { name: "Supabase", level: 75 },
       { name: "MySQL", level: 85 },
       { name: "REST API", level: 80 },
     ],
@@ -39,7 +39,7 @@ const certifications = [
   "Laravel Certified Developer",
   "React Certified Developer",
   "Vue Certified Developer",
-  "MySql Certified Developer",
+  "MySQL Certification",
   "React Advanced Patterns",
 ];
 function Skills() {
@@ -91,9 +91,9 @@ function Skills() {
             </div>
             <div className="flex flex-wrap justify-center gap-3">
               {certifications.map((cert, i) => (
-                <Badge cssStyle="secondary" key={i}>
-                  {cert}
-                </Badge>
+                <button key={i} className="hover:scale-105">
+                  <Badge cssStyle="secondary">{cert}</Badge>
+                </button>
               ))}
             </div>
           </Card>
