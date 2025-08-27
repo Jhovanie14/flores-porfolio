@@ -1,6 +1,7 @@
 import { CalendarDays, MapPin } from "lucide-react";
 import React from "react";
 import Badge from "../components/Badge";
+import Card from "../components/Card";
 
 const experiences = [
   {
@@ -26,7 +27,7 @@ const experiences = [
       "Specialized in creating responsive, accessible web applications. Worked closely with UX designers to implement interactive user interfaces.",
     technologies: ["React", "TypeScript", "Saas", "Tailwind", "REST API"],
     achievements: [
-      "Delivered 2 responsive websites",
+      "Delivered 4 responsive websites",
       "Achieved 90% accessibility score",
       "Assist Sr developer to completion in a short period of time",
     ],
@@ -62,10 +63,7 @@ function Experience() {
           </div>
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className="bg-[#edfcec] border border-neutral-300/50 rounded-md p-6"
-              >
+              <Card key={index}>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
                   <div className="flex flex-col">
                     <span className="text-xl font-medium mb-1">
@@ -111,7 +109,7 @@ function Experience() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>

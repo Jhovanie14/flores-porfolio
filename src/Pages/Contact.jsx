@@ -2,6 +2,7 @@ import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useRef } from "react";
 import Input from "../components/Input";
 import emailjs from "emailjs-com";
+import Card from "../components/Card";
 
 function Contact() {
   const form = useRef();
@@ -84,7 +85,7 @@ function Contact() {
               </div>
             </div>
             {/* right contact content */}
-            <div className="bg-[#edfcec] border border-neutral-300/50 rounded-md shadow p-6">
+            <Card>
               <div className="mb-4">
                 <h4 className="font-medium text-lg">Send a Message</h4>
                 <p className="text-sm text-neutral-800">
@@ -145,7 +146,7 @@ function Contact() {
                   Send Message
                 </button>
               </form>
-            </div>
+            </Card>
           </div>
         </div>
       </div>

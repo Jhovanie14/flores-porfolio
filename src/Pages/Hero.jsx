@@ -58,12 +58,20 @@ function Hero() {
           </div>
           {/* social links */}
           <div className="flex items-center justify-center gap-6">
-            <button className="px-3 py-3 rounded-lg hover:bg-amber-600/80 hover:text-sky-900 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/jhovanie-flores-8b330130b/"
+              target="_blank"
+              className="px-3 py-3 rounded-lg hover:bg-amber-600/80 hover:text-sky-900 transition-colors"
+            >
               <Linkedin />
-            </button>
-            <button className="px-3 py-3 rounded-md hover:bg-amber-600/80 hover:text-sky-900 transition-colors">
+            </a>
+            <a
+              href="https://github.com/Jhovanie14"
+              target="_blank"
+              className="px-3 py-3 rounded-md hover:bg-amber-600/80 hover:text-sky-900 transition-colors"
+            >
               <Github />
-            </button>
+            </a>
             <button className="px-3 py-3 rounded-md hover:bg-amber-600/80 hover:text-sky-900 transition-colors">
               <Mail />
             </button>

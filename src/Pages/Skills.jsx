@@ -1,5 +1,6 @@
 import React from "react";
 import Badge from "../components/Badge";
+import Card from "../components/Card";
 
 const skillCategories = [
   {
@@ -57,10 +58,7 @@ function Skills() {
           {/* skills card */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {skillCategories.map((category, index) => (
-              <div
-                key={index}
-                className=" bg-[#edfcec] border border-neutral-300/50 rounded-md p-6"
-              >
+              <Card key={index}>
                 <div className="mb-6">
                   <h1 className="text-center text-xl font-medium">
                     {category.title}
@@ -82,10 +80,10 @@ function Skills() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
-          <div className="bg-[#edfcec] border border-neutral-300/50 rounded-md p-6">
+          <Card className="bg-[#edfcec] border border-neutral-300/50 rounded-md p-6">
             <div className="text-center">
               <h1 className="text-2xl md:text-4xl font-bold mb-4 text-balance">
                 Certifications
@@ -93,10 +91,12 @@ function Skills() {
             </div>
             <div className="flex flex-wrap justify-center gap-3">
               {certifications.map((cert, i) => (
-                <Badge cssStyle="secondary" key={i}>{cert}</Badge>
+                <Badge cssStyle="secondary" key={i}>
+                  {cert}
+                </Badge>
               ))}
             </div>
-          </div>
+          </Card>
         </div>
       </div>
     </section>
